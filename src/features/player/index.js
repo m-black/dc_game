@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-//import sprite
+import walkSprite from './player.png'
 import handleMovement from './movement'
 
 function Player(props) {
@@ -10,10 +10,8 @@ function Player(props) {
                 position: 'absolute',
                 top: props.position[1],
                 left: props.position[0],
-                // remove backgroundColor when adding sprites.
-                // backgroundImage: `url('${<sprite image here>}')`,
+                backgroundImage: `url('${walkSprite}')`,
                 backgroundPosition: '0 0',
-                backgroundColor: 'green',
                 width: '40px',
                 height: '40px'
             }}
